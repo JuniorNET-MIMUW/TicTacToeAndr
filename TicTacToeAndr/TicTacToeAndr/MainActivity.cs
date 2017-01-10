@@ -21,7 +21,7 @@ namespace TicTacToeAndr
 
             SetContentView(Resource.Layout.Main);
 
-            if (!File.Exists(Path))
+            if(!File.Exists(Path))
                 FindViewById<Button>(Resource.Id.ContinueButton).Enabled = false;
 
             FindViewById<Button>(Resource.Id.NewGameButton).Click += NewGameClick;
