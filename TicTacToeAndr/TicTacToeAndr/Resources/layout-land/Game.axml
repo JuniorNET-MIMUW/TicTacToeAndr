@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="horizontal"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/RootLayout"
+    p1:gravity="center_horizontal">
+    <TableLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/tableLayout1">
+        <TableRow
+            p1:id="@+id/tableRow1"
+            p1:gravity="center">
+            <Button
+                p1:layout_column="0"
+                p1:layout_height="100dp"
+                p1:layout_width="100dp"
+                p1:textSize="50dp"
+                p1:id="@+id/button11" />
+            <Button
+                p1:layout_column="1"
+                p1:layout_height="100dp"
+                p1:layout_width="100dp"
+                p1:textSize="50dp"
+                p1:id="@+id/button12" />
+            <Button
+                p1:layout_column="2"
+                p1:layout_height="100dp"
+                p1:layout_width="100dp"
+                p1:textSize="50dp"
+                p1:id="@+id/button13" />
+        </TableRow>
+        <TableRow
+            p1:id="@+id/tableRow2"
+            p1:gravity="center">
+            <Button
+                p1:layout_column="0"
+                p1:layout_height="100dp"
+                p1:layout_width="100dp"
+                p1:textSize="50dp"
+                p1:id="@+id/button21" />
+            <Button
+                p1:layout_column="1"
+                p1:layout_height="100dp"
+                p1:layout_width="100dp"
+                p1:textSize="50dp"
+                p1:id="@+id/button22" />
+            <Button
+                p1:layout_column="2"
+                p1:layout_height="100dp"
+                p1:layout_width="100dp"
+                p1:textSize="50dp"
+                p1:id="@+id/button23" />
+        </TableRow>
+        <TableRow
+            p1:id="@+id/tableRow3"
+            p1:gravity="center">
+            <Button
+                p1:layout_column="0"
+                p1:layout_height="100dp"
+                p1:layout_width="100dp"
+                p1:textSize="50dp"
+                p1:id="@+id/button31" />
+            <Button
+                p1:layout_column="1"
+                p1:layout_height="100dp"
+                p1:layout_width="100dp"
+                p1:textSize="50dp"
+                p1:id="@+id/button32" />
+            <Button
+                p1:layout_column="2"
+                p1:layout_height="100dp"
+                p1:layout_width="100dp"
+                p1:textSize="50dp"
+                p1:id="@+id/button33" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        p1:id="@+id/ResetButton"
+        p1:text="Reset"
+        p1:layout_height="wrap_content"
+        p1:layout_width="wrap_content" />
+</LinearLayout>
