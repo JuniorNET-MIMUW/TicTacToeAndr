@@ -13,6 +13,8 @@ namespace TicTacToeAndr
     [Activity(Label = "Tic Tac Toe", MainLauncher = false)]
     public class GameActivity : Activity
     {
+        private bool isSoundsEnabled;
+
         private static readonly string Path = 
             System.IO.Path.Combine(System.Environment.GetFolderPath(
                 System.Environment.SpecialFolder.LocalApplicationData), "data.txt");
@@ -26,6 +28,11 @@ namespace TicTacToeAndr
 
             string[] data = File.ReadAllLines(Path);
             var array = data.Select(line => Parse(line.Split(' '))).ToArray();
+
+            if (Intent.Extras.GetChar("FirstPlayer") == 'O')
+                _last = !_last;
+
+            isSoundsEnabled = Intent.Extras.GetBoolean("Sounds");
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Game);
@@ -199,8 +206,11 @@ namespace TicTacToeAndr
                 {
                     string whoWins = _last ? "X" : "O";
                     dialog.SetMessage($"Game is over, {whoWins} winning!");
-                    var player = MediaPlayer.Create(this, Resource.Raw.Tada);
-                    player.Start();
+                    if (isSoundsEnabled)
+                    {
+                        var player = MediaPlayer.Create(this, Resource.Raw.Tada);
+                        player.Start();
+                    }
                 }
                 else dialog.SetMessage("Game is over, draw");
                 dialog.SetNeutralButton("OK", delegate { });

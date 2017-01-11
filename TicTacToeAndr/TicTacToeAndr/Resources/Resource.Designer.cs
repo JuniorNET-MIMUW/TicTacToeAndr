@@ -28,6 +28,22 @@ namespace TicTacToeAndr
 		{
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int XO = 2131099648;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -60,62 +76,74 @@ namespace TicTacToeAndr
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060011
-			public const int ContinueButton = 2131099665;
+			// aapt resource value: 0x7f070011
+			public const int ContinueButton = 2131165201;
 			
-			// aapt resource value: 0x7f060010
-			public const int NewGameButton = 2131099664;
+			// aapt resource value: 0x7f070014
+			public const int FirstPlayerSpinner = 2131165204;
 			
-			// aapt resource value: 0x7f06000e
-			public const int ResetButton = 2131099662;
+			// aapt resource value: 0x7f070013
+			public const int FirstPlayerTextView = 2131165203;
 			
-			// aapt resource value: 0x7f06000d
-			public const int ResetTableRow = 2131099661;
+			// aapt resource value: 0x7f070010
+			public const int NewGameButton = 2131165200;
 			
-			// aapt resource value: 0x7f06000f
-			public const int RootLayout = 2131099663;
+			// aapt resource value: 0x7f07000e
+			public const int ResetButton = 2131165198;
 			
-			// aapt resource value: 0x7f060012
-			public const int SettingsButton = 2131099666;
+			// aapt resource value: 0x7f07000d
+			public const int ResetTableRow = 2131165197;
 			
-			// aapt resource value: 0x7f060002
-			public const int button11 = 2131099650;
+			// aapt resource value: 0x7f07000f
+			public const int RootLayout = 2131165199;
 			
-			// aapt resource value: 0x7f060003
-			public const int button12 = 2131099651;
+			// aapt resource value: 0x7f070012
+			public const int SettingsButton = 2131165202;
 			
-			// aapt resource value: 0x7f060004
-			public const int button13 = 2131099652;
+			// aapt resource value: 0x7f070016
+			public const int SoundsSwitch = 2131165206;
 			
-			// aapt resource value: 0x7f060006
-			public const int button21 = 2131099654;
+			// aapt resource value: 0x7f070015
+			public const int SoundsTextView = 2131165205;
 			
-			// aapt resource value: 0x7f060007
-			public const int button22 = 2131099655;
+			// aapt resource value: 0x7f070002
+			public const int button11 = 2131165186;
 			
-			// aapt resource value: 0x7f060008
-			public const int button23 = 2131099656;
+			// aapt resource value: 0x7f070003
+			public const int button12 = 2131165187;
 			
-			// aapt resource value: 0x7f06000a
-			public const int button31 = 2131099658;
+			// aapt resource value: 0x7f070004
+			public const int button13 = 2131165188;
 			
-			// aapt resource value: 0x7f06000b
-			public const int button32 = 2131099659;
+			// aapt resource value: 0x7f070006
+			public const int button21 = 2131165190;
 			
-			// aapt resource value: 0x7f06000c
-			public const int button33 = 2131099660;
+			// aapt resource value: 0x7f070007
+			public const int button22 = 2131165191;
 			
-			// aapt resource value: 0x7f060000
-			public const int tableLayout1 = 2131099648;
+			// aapt resource value: 0x7f070008
+			public const int button23 = 2131165192;
 			
-			// aapt resource value: 0x7f060001
-			public const int tableRow1 = 2131099649;
+			// aapt resource value: 0x7f07000a
+			public const int button31 = 2131165194;
 			
-			// aapt resource value: 0x7f060005
-			public const int tableRow2 = 2131099653;
+			// aapt resource value: 0x7f07000b
+			public const int button32 = 2131165195;
 			
-			// aapt resource value: 0x7f060009
-			public const int tableRow3 = 2131099657;
+			// aapt resource value: 0x7f07000c
+			public const int button33 = 2131165196;
+			
+			// aapt resource value: 0x7f070000
+			public const int tableLayout1 = 2131165184;
+			
+			// aapt resource value: 0x7f070001
+			public const int tableRow1 = 2131165185;
+			
+			// aapt resource value: 0x7f070005
+			public const int tableRow2 = 2131165189;
+			
+			// aapt resource value: 0x7f070009
+			public const int tableRow3 = 2131165193;
 			
 			static Id()
 			{

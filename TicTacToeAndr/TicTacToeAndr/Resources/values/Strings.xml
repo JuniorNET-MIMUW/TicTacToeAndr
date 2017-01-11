@@ -2,4 +2,8 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">TicTacToeAndr</string>
+    <string-array name="XO">
+        <item>X</item>
+        <item>O</item>
+    </string-array> 
 </resources>
