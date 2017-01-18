@@ -3,7 +3,6 @@ using System.IO;
 using System.Linq;
 
 using Android.App;
-using Android.Content;
 using Android.Media;
 using Android.OS;
 using Android.Widget;
@@ -14,6 +13,7 @@ namespace TicTacToeAndr
     public class GameActivity : Activity
     {
         private bool isSoundsEnabled;
+        private char firstPlayer = 'X';
 
         private static readonly string Path = 
             System.IO.Path.Combine(System.Environment.GetFolderPath(
@@ -30,22 +30,25 @@ namespace TicTacToeAndr
             var array = data.Select(line => Parse(line.Split(' '))).ToArray();
 
             if (Intent.Extras.GetChar("FirstPlayer") == 'O')
+            {
                 _last = !_last;
+                firstPlayer = 'O';
+            }
 
             isSoundsEnabled = Intent.Extras.GetBoolean("Sounds");
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Game);
 
-            FindViewById<Button>(Resource.Id.button11).Text = array[0][0];
-            FindViewById<Button>(Resource.Id.button12).Text = array[0][1];
-            FindViewById<Button>(Resource.Id.button13).Text = array[0][2];
-            FindViewById<Button>(Resource.Id.button21).Text = array[1][0];
-            FindViewById<Button>(Resource.Id.button22).Text = array[1][1];
-            FindViewById<Button>(Resource.Id.button23).Text = array[1][2];
-            FindViewById<Button>(Resource.Id.button31).Text = array[2][0];
-            FindViewById<Button>(Resource.Id.button32).Text = array[2][1];
-            FindViewById<Button>(Resource.Id.button33).Text = array[2][2];
+            SetButtonValue(Resource.Id.button11, array[0][0]);
+            SetButtonValue(Resource.Id.button12, array[0][1]);
+            SetButtonValue(Resource.Id.button13, array[0][2]);
+            SetButtonValue(Resource.Id.button21, array[1][0]);
+            SetButtonValue(Resource.Id.button22, array[1][1]);
+            SetButtonValue(Resource.Id.button23, array[1][2]);
+            SetButtonValue(Resource.Id.button31, array[2][0]);
+            SetButtonValue(Resource.Id.button32, array[2][1]);
+            SetButtonValue(Resource.Id.button33, array[2][2]);
 
             FindViewById<Button>(Resource.Id.button11).Click += GetEventHandler(Resource.Id.button11);
             FindViewById<Button>(Resource.Id.button12).Click += GetEventHandler(Resource.Id.button12);
